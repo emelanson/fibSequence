@@ -14,8 +14,10 @@ function generateF(len, n1, n2) {
         let nextF = n1 + n2;
         fibSeq.push(nextF)
         generateF(len - 1, n2, nextF);
-    } else {
-        console.log(fibSeq);
+    }
+    //print desired digits and end.
+    else {
+        console.table(fibSeq);
         console.log("FINISHED");
     }
 
